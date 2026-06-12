@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+  pre_build:
+    commands:
+      - echo "Running pre-build tasks or logging into services..."
+  build:
+    commands:
+      - echo "Building the application..."
+  post_build:
+    commands:
+      - echo "Build completed successfully on `date`"
+
+artifacts:
+  files:
+    - 'index.html' # Tells CodeBuild to package all build files as an output artifact
+  base-directory: . # Update this to match your build output folder (e.g., dist, target, build)
