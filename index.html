@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Welcome</title>
+	<style>
+		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:40px;background:#f7f9fc;color:#111}
+		.card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(20,30,50,0.08);max-width:600px}
+		h1{margin:0 0 8px;font-size:20px}
+		p{margin:6px 0}
+		code{background:#f1f5f9;padding:4px 6px;border-radius:4px}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<h1>Welcome</h1>
+		<p>Hostname: <code id="hostname">—</code></p>
+		<p>Date: <code id="date">—</code></p>
+	</div>
+
+	<script>
+		// Show hostname and current date/time
+		document.getElementById('hostname').textContent = window.location.hostname || 'localhost';
+		document.getElementById('date').textContent = new Date().toString();
+	</script>
+</body>
+</html>
