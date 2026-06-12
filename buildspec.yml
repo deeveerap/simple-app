@@ -1,5 +1,7 @@
 version: 0.2
 
+image: ubuntu:latest
+
 phases:
   install:
     commands:
