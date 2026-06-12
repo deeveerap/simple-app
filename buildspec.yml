@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
+      - echo "Test Change"
   pre_build:
     commands:
       - echo "Running pre-build tasks or logging into services..."
